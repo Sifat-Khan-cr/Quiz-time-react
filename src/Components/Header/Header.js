@@ -9,10 +9,10 @@ const Header = () => {
     return (
         <div>
             <h1 className='text-6xl'>Sifat Quiz Time</h1>
-            <div className='grid grid-cols-1 gap-4 justify-center md:grid-cols-4 lg:px-20 py-5 mx-auto'>
+            <div className='grid grid-cols-1 gap-4 justify-center md:grid-cols-2 px-20 py-10 mx-auto lg:grid-cols-4'>
                 {
                     topics.map(topic => <QuizTopic key={topic.id} topic={topic}></QuizTopic>)
-                    topics.map(topic => console.log(topic))
+                    // topics.map(topic => console.log(topic))
                 }
 
             </div>
