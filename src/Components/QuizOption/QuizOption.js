@@ -3,12 +3,12 @@ import React from 'react';
 const QuizOption = ({ option, correctAnswer }) => {
 
     return (
-        <div>
+        <div className='w-6/12 mx-auto my-2'>
 
-            <div className="form-control w-6/12 mx-auto">
-                <label className="label cursor-pointer">
-                    <span className="label-text">{option}</span>
-                    <input type="radio" name="radio-6" className="radio checked:bg-blue-500" checked />
+            <div className="form-control m-5">
+                <label className="text-left flex cursor-pointer">
+                    <input type="checkbox" onClick={() => console.log(option)} className="checkbox checkbox-primary" />
+                    <span className="label-text ml-5">{option}</span>
                 </label>
             </div>
 

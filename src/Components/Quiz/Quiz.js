@@ -8,7 +8,7 @@ const Quiz = ({ quiz }) => {
         <div className='my-10 w-4/5 mx-auto'>
             <h1 className='text-3xl'>{question}</h1>
             {
-                options.map(option => <QuizOption key={id} correctAnswer={correctAnswer} option={option}></QuizOption>)
+                options.map(option => <QuizOption correctAnswer={correctAnswer} option={option}></QuizOption>)
                 // options.map(option => console.log(option, typeof (option)))
 
             }
