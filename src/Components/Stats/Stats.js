@@ -11,7 +11,7 @@ const Stats = () => {
 
     return (
         <div>
-            <LineChart className='hidden lg:block mt-20 mx-auto' width={500}
+            <LineChart className='hidden md:block mt-20 mx-auto' width={500}
                 height={300}
                 data={data}>
                 <YAxis />
