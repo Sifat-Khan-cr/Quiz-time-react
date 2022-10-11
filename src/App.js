@@ -4,7 +4,7 @@ import Main from './Layout/Main';
 import Header from './Components/Header/Header';
 import Blog from './Components/Blog/Blog';
 import Stats from './Components/Stats/Stats';
-import Quiz from './Components/Quiz/Quiz';
+import MainQuiz from './Components/MainQuiz/MainQuiz';
 
 
 function App() {
@@ -31,7 +31,7 @@ function App() {
           loader: async ({ params }) => {
             return fetch(`https://openapi.programming-hero.com/api/quiz/${params.topicId}`);
           },
-          element: <Quiz></Quiz>
+          element: <MainQuiz></MainQuiz>
         }
       ]
     }

@@ -6,7 +6,7 @@ const QuizTopic = ({ topic }) => {
     return (
         <div>
             <div className="card w-full bg-base-100 shadow-xl">
-                <figure><img src={logo} alt="logo" /></figure>
+                <figure><img className='bg-black' src={logo} alt="logo" /></figure>
                 <div className="card-body">
                     <h2 className="card-title">{name}</h2>
                     <div className="card-actions justify-end">

@@ -1,12 +1,18 @@
 import React from 'react';
-import { useLoaderData } from 'react-router-dom';
+import QuizOption from '../QuizOption/QuizOption';
 
-const Quiz = () => {
-    const quiz = useLoaderData();
-    console.log(quiz);
+const Quiz = ({ quiz }) => {
+    const { id, question, options, correctAnswer } = quiz;
+    // console.log(options)
     return (
-        <div>
-            <h1>In am quiz</h1>
+        <div className='my-10 w-4/5 mx-auto'>
+            <h1 className='text-3xl'>{question}</h1>
+            {
+                options.map(option => <QuizOption key={id} correctAnswer={correctAnswer} option={option}></QuizOption>)
+                // options.map(option => console.log(option, typeof (option)))
+
+            }
+
 
         </div>
     );
