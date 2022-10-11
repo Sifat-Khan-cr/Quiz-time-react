@@ -1,14 +1,15 @@
 import React from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+
 
 const QuizOption = ({ option, correctAnswer, id }) => {
-    // const checker = data => (data === correctAnswer) ? console.log('incorrect') : console.log('correct');
     const checker = data => {
         if (data === correctAnswer) {
-            // console.log('correct')
-            alert("correct");
+            toast("correct");
         } else {
-            // console.log('incorrect')
-            alert("incorrect");
+            toast("incorrect");
 
         }
     }
@@ -22,6 +23,18 @@ const QuizOption = ({ option, correctAnswer, id }) => {
                     <input type="radio" onClick={() => checker(option)} name={id} className="radio checked:bg-blue-500" />
                 </label>
             </div>
+            <ToastContainer
+                position="top-center"
+                autoClose={100}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+                theme="light"
+            />
 
 
         </div>
