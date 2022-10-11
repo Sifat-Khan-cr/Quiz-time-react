@@ -3,7 +3,8 @@ import React from 'react';
 const ErrorPage = () => {
     return (
         <div>
-            <h1>this is 404</h1>
+            <img className='w-9/12 mx-auto mb-10' src='https://aioseo.com/wp-content/uploads/2021/04/how-to-find-and-fix-404-errors-in-wordpress.png' alt='image'></img>
+
 
         </div>
     );
